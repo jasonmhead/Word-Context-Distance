@@ -1,6 +1,10 @@
 Word-Context-Distance
 =====================
 
+- Built by Jason Head
+- jmhead@jasonhead.com
+- jasonmhead.com
+
 Returns a Python dictionary containing a word's distance from other words within sentences or phrases from given text
 returned object structure: {"word":[word's positions in each sentence ]}
 
