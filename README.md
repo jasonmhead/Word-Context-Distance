@@ -2,7 +2,8 @@ Word-Context-Distance
 =====================
 
 Returns a Python dictionary containing a word's distance from other words within sentences or phrases from given text
-returned object structure: {"word":[word's sentence positions]}
+returned object structure: {"word":[word's positions in each sentence ]}
+each target word's absoloute distance against each word in a sentence is returned
 
 get_word_distances_per_sentence(text_to_parse, target_word, sentence_or_phrase, use_stopwords=1)
 - text_to_parse => string
