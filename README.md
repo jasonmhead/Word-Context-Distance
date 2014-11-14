@@ -6,7 +6,7 @@ returned object structure: {"word":[word's positions in each sentence ]}
 
 each target word's absoloute distance against each word in a sentence is returned
 
-get_word_distances_per_sentence(text_to_parse, target_word, sentence_or_phrase, use_stopwords=1)
+# get_word_distances_per_sentence(text_to_parse, target_word, sentence_or_phrase, use_stopwords=1)
 - text_to_parse => string
 - sentence_or_phrase => "sentence" or "phrase" # this will further parse down sentances by , : ; breaking things into phrases as the basic unit
 - target_word => string
