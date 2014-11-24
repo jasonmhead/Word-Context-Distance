@@ -7,7 +7,7 @@ Word-Context-Distance
 
 ------------------------
 This is exploratory learning code, for more complex application you might want to check out something like 
-- word2vect conccept in Python: improved version with better performance than Google's word2vect: 
+- word2vect concept in Python: improved version with better performance than Google's word2vect: 
 https://github.com/piskvorky/gensim/
 
 - and Rosetta could be useful as well: 
