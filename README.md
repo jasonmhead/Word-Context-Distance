@@ -5,15 +5,19 @@ Word-Context-Distance
 - jmhead@jasonhead.com
 - jasonmhead.com
 
-Returns a Python dictionary containing a word's distance from other words within sentences or phrases from given text
-returned object structure: {"word":[word's positions in each sentence ]}
-
-each target word's absoloute distance against each word in a sentence is returned
-
+---------------------
 This is exploratory learning code, for more complex application you might want to check out something like 
 - word2vect conccept in Python: improved version with better performance than Google's word2vect: 
 https://github.com/piskvorky/gensim/
 - and Rosetta could be useful as well: https://github.com/columbia-applied-data-science/rosetta 
+---------------------
+
+- get_word_distances_per_sentence
+- 
+Returns a Python dictionary containing a word's distance from other words within sentences or phrases from given text
+returned object structure: {"word":[word's positions in each sentence ]}
+
+each target word's absoloute distance against each word in a sentence is returned
 
 ```
 def get_word_distances_per_sentence(text_to_parse, target_word, sentence_or_phrase, use_stopwords=1)
