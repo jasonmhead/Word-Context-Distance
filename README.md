@@ -8,10 +8,10 @@ Word-Context-Distance
 ------------------------
 This is exploratory learning code, for more complex application you might want to check out something like 
 - word2vect conccept in Python: improved version with better performance than Google's word2vect: 
-https://github.com/piskvorky/gensim/
+- https://github.com/piskvorky/gensim/
 
 - and Rosetta could be useful as well: 
-https://github.com/columbia-applied-data-science/rosetta 
+- https://github.com/columbia-applied-data-science/rosetta 
 ------------------------
 
 - get_word_distances_per_sentence
