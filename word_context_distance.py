@@ -167,18 +167,3 @@ def get_within_distance(distance_dict, max_distance, min_distance = 1, allow_sol
         if len(within_dist_temp) > 0:
             within_dist[word_idx] = within_dist_temp
     return within_dist;
-
-def make_distance_tree(text_to_parse, starting_target_word, max_distance = 5, tokenize_type = "sentence", min_distance = 1, max_depth = 5, allow_solo_words = 1):
-    raw_initial = get_word_distances_per_sentence(text_to_parse, starting_target_word, tokenize_type) # get the starting data
-    if allow_solo_words != 1:
-        raw_initial = remove_solo_words(distance_dict)
-    primary_dist_dict = get_within_distance(raw_initial, max_distance, min_distance, allow_solo_words)
-
-    #start lookup recursions # this area should be eliminated and re-factored as a true recursive, tree-building function
-    sent_secondaries = {}
-    for dict_word, dict_counts in primary_dist_dict.iteritems():
-        secondary_dist_dict = get_word_distances_per_sentence(text_to_parse, dict_word, tokenize_type)
-        if len(secondary_dist_dict) > 0:
-            sent_secondaries[dict_word] = secondary_dist_dict
-
-    return sent_secondaries
