@@ -11,7 +11,7 @@ This is exploratory learning code, for more complex application you might want t
 https://github.com/piskvorky/gensim/
 
 - and Rosetta could be useful as well: 
-https://github.com/columbia\-applied\-data\-science/rosetta 
+
 ------------------------
 
 _get_word\_distances\_per\_sentence_
